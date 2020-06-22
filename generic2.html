@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stock Price Predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic1.html">Nowcasting GDP</a></li>
+							<li><a href="generic2.html">Stock Price Predictor</a></li>
+							<li><a href="generic3.html">Credit Card Fraud Detector</a></li>
+							<li><a href="generic4.html">Fake News Detector App</a></li>
+							<li><a href="https://www.kaggle.com/edricf">Kaggle Competitions Expert</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Stock Price Predictor Using Sentiment Analysis on Tweets</h1>
+									</header>
+									<span class="image main"><img src="images/apple_prices.png" alt="" /></span>
+									<p> In this project, I first Scraped 2018 Twitter data using Twitterscrapper API for each day. Afterwards, I applied Sentiment Analysis wherein the scores ranges from -1 to 1 with more negative numbers indicating a bad sentiment score and a more positive number indicating a good sentiment score. I took the average of this score giving a daily sentiment score for the chosen stock. Finally, I merged the Adjusted Closing Prices for the given day.
+									</p>
+
+									<p> I then explored how to fit a model using the relationship of
+										Stock Prices with Sentiment Scores and also taking into account its time series nature.
+										My approach is first applying SVM in order to use the sentiment scores to model stock prices. Afterwards, we fit an ARIMA to the residuals of our predictions in order to model the time series nature of Stock Prices and add the forecasted residuals to the predictions of our SVM.
+									</p>
+
+								<a href="https://github.com/edricf/Stock-Price-with-Sentiment-Analysis" class="link"> <strong>See Full Project Here</strong> </a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="http://github.com/edricf" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.kaggle.com/edricf" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

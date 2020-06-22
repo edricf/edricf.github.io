@@ -29,6 +29,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.Fraud {
+border: solid white 100px;
+
+}
+
 body {
 	line-height: 1;
 }
@@ -3707,7 +3712,8 @@ input, select, textarea {
 
 /* Footer */
 
-	#footer .copyright {
+	#footer copyright li{
+		text-align: center;
 		font-size: 0.8em;
 		list-style: none;
 		padding-left: 0;
@@ -3727,6 +3733,12 @@ input, select, textarea {
 				margin-left: 0;
 				padding-left: 0;
 			}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 	@media screen and (max-width: 480px) {
 
@@ -3950,3 +3962,11 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+#temp {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
